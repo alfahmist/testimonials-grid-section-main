@@ -1,0 +1,112 @@
+/* Global */
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 13px;
+}
+
+.circle {
+  border-radius: 100%;
+}
+.box * {
+  margin: 0;
+  padding: 0;
+}
+/* box color */
+.is-violet {
+  background-color: hsl(263, 55%, 52%);
+}
+
+.is-grayish {
+  background-color: hsl(217, 19%, 35%);
+}
+
+.is-blackish {
+  background-color: hsl(219, 29%, 14%);
+}
+
+.text-invert h3 {
+  color: hsl(0, 0%, 100%);
+}
+
+.text-invert p,
+.text-invert h4 {
+  color: hsl(0, 0%, 81%);
+}
+
+/* box */
+.box {
+  border-radius: 10px;
+  padding: 20px;
+  color: hsl(217, 19%, 35%);
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
+}
+
+.box-head {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.box-head h3 {
+  margin-bottom: 10px;
+}
+.name {
+  margin-left: 10px;
+}
+
+.name h4 {
+  color: hsl(217, 19%, 35%);
+}
+
+.name p {
+  color: hsl(0, 0%, 81%);
+}
+
+.box-content h3 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+/* container */
+
+.box:nth-child(1) {
+  grid-area: viol;
+}
+.box:nth-child(2) {
+  grid-area: grayish;
+}
+.box:nth-child(3) {
+  grid-area: whit;
+}
+.box:nth-child(4) {
+  grid-area: blackish;
+}
+.box:nth-child(5) {
+  grid-area: side;
+}
+
+.container {
+  display: grid;
+  column-gap: 40px;
+  row-gap: 20px;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "viol"
+    "grayish"
+    "whit"
+    "blackish"
+    "side";
+}
+
+@media only screen and (min-width: 375px) {
+  .container {
+    display: grid;
+    column-gap: 30px;
+    row-gap: 30px;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "viol viol grayish side"
+      "whit blackish blackish side";
+  }
+}
