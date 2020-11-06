@@ -16,33 +16,10 @@ body {
 /* box */
 .box {
   border-radius: 10px;
-  padding: 20px;
+  padding: 30px 40px;
   color: hsl(217, 19%, 35%);
   background-color: white;
   box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.2);
-}
-
-/* box color */
-
-.is-violet {
-  background-color: hsl(263, 55%, 52%);
-}
-
-.is-grayish {
-  background-color: hsl(217, 19%, 35%);
-}
-
-.is-blackish {
-  background-color: hsl(219, 29%, 14%);
-}
-
-.text-invert h3 {
-  color: hsl(0, 0%, 100%);
-}
-
-.text-invert p,
-.text-invert h4 {
-  color: hsl(0, 0%, 81%);
 }
 
 .box-head {
@@ -66,8 +43,35 @@ body {
 }
 
 .box-content h3 {
-  font-size: 1.2rem;
+  font-size: 1.5em;
+  line-height: 1.2em;
   margin-bottom: 15px;
+}
+.box-content p {
+  line-height: 1.5em;
+}
+
+/* box color */
+
+.is-violet {
+  background-color: hsl(263, 55%, 52%);
+}
+
+.is-grayish {
+  background-color: hsl(217, 19%, 35%);
+}
+
+.is-blackish {
+  background-color: hsl(219, 29%, 14%);
+}
+
+.text-invert h3,
+.text-invert h4 {
+  color: hsl(0, 0%, 100%);
+}
+
+.text-invert p {
+  color: hsl(0, 0%, 81%);
 }
 
 /* container */
@@ -104,8 +108,8 @@ body {
 
 @media only screen and (min-width: 375px) {
   .container {
-    width: 80%;
-    margin: 5% auto;
+    width: 75%;
+    margin: 10% auto;
     display: grid;
     column-gap: 30px;
     row-gap: 30px;
