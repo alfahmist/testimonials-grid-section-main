@@ -2,6 +2,7 @@
 body {
   font-family: "Barlow Semi Condensed", sans-serif;
   font-size: 13px;
+  background-color: hsl(210, 46%, 95%);
 }
 
 .circle {
@@ -11,7 +12,18 @@ body {
   margin: 0;
   padding: 0;
 }
+
+/* box */
+.box {
+  border-radius: 10px;
+  padding: 20px;
+  color: hsl(217, 19%, 35%);
+  background-color: white;
+  box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.2);
+}
+
 /* box color */
+
 .is-violet {
   background-color: hsl(263, 55%, 52%);
 }
@@ -31,14 +43,6 @@ body {
 .text-invert p,
 .text-invert h4 {
   color: hsl(0, 0%, 81%);
-}
-
-/* box */
-.box {
-  border-radius: 10px;
-  padding: 20px;
-  color: hsl(217, 19%, 35%);
-  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
 }
 
 .box-head {
@@ -100,6 +104,8 @@ body {
 
 @media only screen and (min-width: 375px) {
   .container {
+    width: 80%;
+    margin: 5% auto;
     display: grid;
     column-gap: 30px;
     row-gap: 30px;
